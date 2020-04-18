@@ -11,51 +11,50 @@ import org.json.simple.parser.ParseException;
 
 public class JSONFileReaderUtil {
 
-public String searchKeyWordAN;
+ public String searchKeyWordAN;
 
-public String getSearchKeyWordAN() {
-		
-	return searchKeyWordAN;
-}
+ public String getSearchKeyWordAN() {
 
-public void setSearchKeyWordAN(String searchKeyWordAN) {
-	 
-	this.searchKeyWordAN = searchKeyWordAN;
-}
+  return searchKeyWordAN;
+  
+ }
 
-	@SuppressWarnings("unchecked")
-	public void ReadTestDataJSON() 
-	{
-		JSONParser jsonParser = new JSONParser();
-		
-		try (FileReader reader = new FileReader("TestData.json"))
-		{
-	
-            Object obj = jsonParser.parse(reader);
+ public void setSearchKeyWordAN(String searchKeyWordAN) {
 
-            JSONArray employeeList = (JSONArray) obj;
-            System.out.println(employeeList);
-            
-            employeeList.forEach( emp -> parseTestDataObject( (JSONObject) emp ) );
+  this.searchKeyWordAN = searchKeyWordAN;
+ }
 
-            
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-	}
+ @SuppressWarnings("unchecked")
+ public void ReadTestDataJSON() {
+  JSONParser jsonParser = new JSONParser();
 
-	public void parseTestDataObject(JSONObject testdata) 
-	
-	{
-		JSONObject employeeObject = (JSONObject) testdata.get("amazonETLData");
-	    searchKeyWordAN = (String) employeeObject.get("searchKeyWordAN");	
-		System.out.println(searchKeyWordAN);
-		
-	}
-	
-	
+  try (FileReader reader = new FileReader("TestData.json")) {
+
+   Object obj = jsonParser.parse(reader);
+
+   JSONArray employeeList = (JSONArray) obj;
+   System.out.println(employeeList);
+
+   employeeList.forEach(emp -> parseTestDataObject((JSONObject) emp));
+
+
+  } catch (FileNotFoundException e) {
+   e.printStackTrace();
+  } catch (IOException e) {
+   e.printStackTrace();
+  } catch (ParseException e) {
+   e.printStackTrace();
+  }
+ }
+
+ public void parseTestDataObject(JSONObject testdata)
+
+ {
+  JSONObject employeeObject = (JSONObject) testdata.get("amazonETLData");
+  searchKeyWordAN = (String) employeeObject.get("searchKeyWordAN");
+  System.out.println(searchKeyWordAN);
+
+ }
+
+
 }
