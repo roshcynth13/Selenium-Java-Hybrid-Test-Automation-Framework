@@ -33,7 +33,7 @@ public class amazonSearchResultsPage {
 		List <WebElement> listings = driver.findElements(searchResultsbyName);
 		System.out.println("Number of items loaded by searchkeyword Sony is "+" "+listings.size());
 	    Random r = new Random();
-	    /* Clicking a random results */
+	    /* Clicking a random search result  */
 	    int randomValue = r.nextInt(listings.size());
 	    listings.get(randomValue).click();	
 	    

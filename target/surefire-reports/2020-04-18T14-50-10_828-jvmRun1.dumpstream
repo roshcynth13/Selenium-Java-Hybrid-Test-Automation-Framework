@@ -1,5 +1,0 @@
-# Created at 2020-04-18T14:50:12.974
-Unresolved compilation problem: 
-	The type listeners must implement the inherited abstract method ITestListener.onStart(ITestContext)
-
-
