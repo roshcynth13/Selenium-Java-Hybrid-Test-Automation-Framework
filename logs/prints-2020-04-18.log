@@ -1,7 +1,4 @@
-14:38:08.034 [main] INFO  resources.BaseClass - Purchase item from amazon is completed with no errors 
-14:51:23.299 [main] INFO  resources.BaseClass - driver is initialized
-14:51:25.889 [main] INFO  resources.BaseClass - Navigated to ebay 
-14:51:27.227 [main] INFO  resources.BaseClass - Asserting the page title
-14:51:31.890 [main] INFO  resources.BaseClass - driver is initialized
-14:51:34.415 [main] INFO  resources.BaseClass - Navigated to Amazon 
-14:51:35.643 [main] INFO  resources.BaseClass - Searching for the given keyword
+23:09:22.379 [main] INFO  resources.BaseClass - Navigated to Amazon 
+23:09:23.466 [main] INFO  resources.BaseClass - Searching for the given keyword
+23:09:26.331 [main] INFO  resources.BaseClass - Clicking a random search result
+23:09:28.600 [main] INFO  resources.BaseClass - The title of the page is  HQRP Remote Control for Sony KDL-55W800B, KDL-55W800, KDL-50W800B, KDL-50W800, KDL-60W630B, KDL-60W630 50” 55” 60” LCD LED HD TV Smart 1080p 3D Ultra 4K Bravia + HQRP Coaster: Amazon.com.au: Electronics

@@ -11,6 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import resources.BaseClass;
+import utils.JSONFileReaderUtil;
 
 public class TC_001X_Item_Purchase_Amazon extends BaseClass {
 	
@@ -35,7 +36,9 @@ public class TC_001X_Item_Purchase_Amazon extends BaseClass {
 		
 	    amazonLandingPage aLp = new amazonLandingPage(driver);
 		log.info("Searching for the given keyword");
-	    aLp.getSearchTextBox().sendKeys("Sony 55 inch TV");
+		JSONFileReaderUtil jUtil = new JSONFileReaderUtil();
+		jUtil.ReadTestDataJSON();
+	    aLp.getSearchTextBox().sendKeys(jUtil.getSearchKeyWordAN());
 	    AssertJUnit.assertTrue(aLp.getSearchTextBox().isDisplayed());
 	    aLp.getSearchItemButton().click();
 	    amazonSearchResultsPage aSp = new amazonSearchResultsPage(driver);
