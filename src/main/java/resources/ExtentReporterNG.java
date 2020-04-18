@@ -20,6 +20,8 @@ import com.relevantcodes.extentreports.LogStatus;
  
 public class ExtentReporterNG implements IReporter {
 	
+	/* The Report generation class - Extent NG Reporting */
+	
     private ExtentReports extent;
  
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
