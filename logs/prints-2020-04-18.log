@@ -1,0 +1,7 @@
+14:38:08.034 [main] INFO  resources.BaseClass - Purchase item from amazon is completed with no errors 
+14:51:23.299 [main] INFO  resources.BaseClass - driver is initialized
+14:51:25.889 [main] INFO  resources.BaseClass - Navigated to ebay 
+14:51:27.227 [main] INFO  resources.BaseClass - Asserting the page title
+14:51:31.890 [main] INFO  resources.BaseClass - driver is initialized
+14:51:34.415 [main] INFO  resources.BaseClass - Navigated to Amazon 
+14:51:35.643 [main] INFO  resources.BaseClass - Searching for the given keyword
