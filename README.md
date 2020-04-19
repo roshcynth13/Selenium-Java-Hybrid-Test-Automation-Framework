@@ -37,3 +37,8 @@ Solution to the Web Automation Assignment from Opus Consultancy
 # Logging
 
 -  Logs folder does have the updated logs folder being generated on every execution
+
+
+# Snapshots and Project Dev History
+
+- Refer "Snapshots.docx"
