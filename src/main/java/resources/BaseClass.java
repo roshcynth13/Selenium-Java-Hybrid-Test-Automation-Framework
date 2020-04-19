@@ -21,17 +21,24 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseClass {
 	
+	/* Base Class provides the requires set ups and sourcing features */
+	
 	public static WebDriver driver;
 	public Properties prop;
 	
 	public WebDriver initializeDriver() throws IOException {
 		
 	    prop = new Properties();
-		FileInputStream fis = new FileInputStream("/Users/roshantocynthia/WebAutomationFW/src/main/java/resources/data.properties");
+		FileInputStream fis = new FileInputStream("data.properties");
 		prop.load(fis);
 		String browserName= prop.getProperty("browser");
 		
-		/* This code is being developed in Mac Machine. Hence No setProperty() is required as the external drivers are loaded from the directory "/usr/local/bin" */
+		/* No setProperty() is required in MAC Machine as the external drivers are loaded from the directory "/usr/local/bin" */
+	
+		/**
+		 * For Windows OS - Use 	System.setProperty("webdriver.chrome.driver", "path of the driver")
+		 * 
+		 */
 		
 		if (browserName.equals("chrome")) {
 				
@@ -39,20 +46,12 @@ public class BaseClass {
 			
 		}
 		
-		else if (browserName.equals("firefox")) {
+		else if (browserName.equals("firefox")) {	
 			
-			//System.setProperty("webdriver.gecko.driver", "/Users/roshantocynthia/ExtD/geckodriver.exe");
-			driver = new FirefoxDriver();
-			
+			driver = new FirefoxDriver();	
 			
 		}
-		
-		else if (browserName.equals("cvv")) {
-			
-			/* to be added */ 
-			
-			
-		}
+
 		
 		/* An implicit wait applied across all Test Cases */
 		
@@ -64,8 +63,10 @@ public class BaseClass {
 
 	public void getScreenshot(String result) throws IOException {
 		
+		/* The TestNG Listener manages the ability to take screenshots which can be configured in listener.java class */
+		
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("/Users/roshantocynthia/WebAutomationFW/screenshots/"+result+"screenshot.png"));
+		FileUtils.copyFile(src, new File("screenshots/"+result+"screenshot.png"));
 		
 	}
 

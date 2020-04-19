@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 public class amazonCheckoutPage {
 	
 public WebDriver driver;
+
 	
 	By purchaseButton = By.xpath("//span[contains(text(),'Sony')]");
 

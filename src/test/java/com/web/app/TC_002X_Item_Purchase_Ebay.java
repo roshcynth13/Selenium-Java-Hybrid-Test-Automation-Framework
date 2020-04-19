@@ -47,6 +47,8 @@ public class TC_002X_Item_Purchase_Ebay extends BaseClass {
 	    AssertJUnit.assertTrue(eLp.getSearchTextBox().isDisplayed());
 	    eLp.getSearchItemButton().click();
 		log.info("Clicking a random search result");
+		ebaySearchResultsPage eSp = new ebaySearchResultsPage(driver);
+		eSp.clickeBayRandomItem();
 		log.info("The title of the page is "+" "+driver.getTitle());
 		log.info("Purchase item from eBay is completed with no errors ");
 	

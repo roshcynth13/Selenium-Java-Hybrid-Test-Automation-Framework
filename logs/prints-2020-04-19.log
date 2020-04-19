@@ -1,7 +1,7 @@
-01:58:49.915 [main] INFO  resources.BaseClass - Navigated to eBay 
-01:58:51.849 [main] INFO  resources.BaseClass - Searching for the given keyword
-01:58:56.019 [main] INFO  resources.BaseClass - Clicking a random search result
-01:58:56.071 [main] INFO  resources.BaseClass - The title of the page is  Sony 55 inch TV | eBay
-01:58:56.071 [main] INFO  resources.BaseClass - Purchase item from eBay is completed with no errors 
-01:58:59.698 [main] INFO  resources.BaseClass - driver is initialized
-01:59:02.274 [main] INFO  resources.BaseClass - Navigated to amazon 
+15:01:07.860 [main] INFO  resources.BaseClass - Searching for the given keyword
+15:01:40.438 [main] INFO  resources.BaseClass - Clicking a random search result
+15:03:39.870 [main] INFO  resources.BaseClass - driver is initialized
+15:03:54.079 [main] INFO  resources.BaseClass - Navigated to eBay 
+15:04:06.903 [main] INFO  resources.BaseClass - Searching for the given keyword
+15:04:30.099 [main] INFO  resources.BaseClass - Clicking a random search result
+15:04:59.773 [main] INFO  resources.BaseClass - driver is initialized
