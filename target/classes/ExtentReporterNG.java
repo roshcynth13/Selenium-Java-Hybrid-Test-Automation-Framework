@@ -20,7 +20,7 @@ import com.relevantcodes.extentreports.LogStatus;
  
 public class ExtentReporterNG implements IReporter {
 	
-	/* The Report generation class - Extent NG Reporting */
+   /* The Report generation class - Extent NG Reporting */
 	
     private ExtentReports extent;
  

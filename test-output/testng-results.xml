@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11998" started-at="2020-04-18T22:46:01 AEST" finished-at="2020-04-18T22:46:13 AEST">
+  <suite name="Default suite" duration-ms="6724" started-at="2020-04-19T01:55:37 AEST" finished-at="2020-04-19T01:55:44 AEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11998" started-at="2020-04-18T22:46:01 AEST" finished-at="2020-04-18T22:46:13 AEST">
-      <class name="com.web.app.TC_001X_Item_Purchase_Amazon">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.web.app.TC_001X_Item_Purchase_Amazon@1af2d44a]" name="setUp" is-config="true" duration-ms="5851" started-at="2020-04-18T22:46:01 AEST" finished-at="2020-04-18T22:46:06 AEST">
+    <test name="Default test" duration-ms="6724" started-at="2020-04-19T01:55:37 AEST" finished-at="2020-04-19T01:55:44 AEST">
+      <class name="com.web.app.BasicGridTest">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:com.web.app.BasicGridTest@2bbaf4f0]" name="setupTest" is-config="true" duration-ms="1948" started-at="2020-04-19T01:55:37 AEST" finished-at="2020-04-19T01:55:39 AEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="purchaseanItemAmazon()[pri:0, instance:com.web.app.TC_001X_Item_Purchase_Amazon@1af2d44a]" name="purchaseanItemAmazon" duration-ms="5847" started-at="2020-04-18T22:46:06 AEST" finished-at="2020-04-18T22:46:12 AEST">
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="facebookLoginButtonClick()[pri:0, instance:com.web.app.BasicGridTest@2bbaf4f0]" name="facebookLoginButtonClick" duration-ms="4534" started-at="2020-04-19T01:55:39 AEST" finished-at="2020-04-19T01:55:44 AEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- purchaseanItemAmazon -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.web.app.TC_001X_Item_Purchase_Amazon@1af2d44a]" name="tearDown" is-config="true" duration-ms="244" started-at="2020-04-18T22:46:12 AEST" finished-at="2020-04-18T22:46:13 AEST">
+        </test-method> <!-- facebookLoginButtonClick -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.web.app.BasicGridTest@2bbaf4f0]" name="quitDriver" is-config="true" duration-ms="181" started-at="2020-04-19T01:55:44 AEST" finished-at="2020-04-19T01:55:44 AEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.web.app.TC_001X_Item_Purchase_Amazon -->
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.web.app.BasicGridTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

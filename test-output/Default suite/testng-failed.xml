@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.web.app.TC_002X_Item_Purchase_Ebay">
+      <class name="com.web.app.BasicGridTest">
         <methods>
-          <include name="purchaseanItemEbay"/>
+          <include name="quitDriver"/>
+          <include name="facebookLoginButtonClick"/>
+          <include name="setupTest"/>
         </methods>
-      </class> <!-- com.web.app.TC_002X_Item_Purchase_Ebay -->
+      </class> <!-- com.web.app.BasicGridTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

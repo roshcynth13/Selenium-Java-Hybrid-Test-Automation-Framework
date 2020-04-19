@@ -7,6 +7,8 @@ import org.testng.AssertJUnit;
 import java.io.IOException;
 import com.web.app.pageObjects.amazonLandingPage;
 import com.web.app.pageObjects.amazonSearchResultsPage;
+
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,26 +26,26 @@ public class TC_001X_Item_Purchase_Amazon extends BaseClass {
 		driver = initializeDriver();
 		log.info("driver is initialized");
 	    driver.get(prop.getProperty("amazonURL"));
-		log.info("Navigated to Amazon ");
+		log.info("Navigated to amazon ");
 	   
 		
 	}
-	
+
 
 	@Test
 	public void purchaseanItemAmazon() throws IOException {
 		
 		
-	    amazonLandingPage aLp = new amazonLandingPage(driver);
+		amazonLandingPage aLp = new amazonLandingPage(driver);
 		log.info("Searching for the given keyword");
 		JSONFileReaderUtil jUtil = new JSONFileReaderUtil();
 		jUtil.ReadTestDataJSON();
-	    aLp.getSearchTextBox().sendKeys(jUtil.getSearchKeyWordAN());
+		aLp.getSearchTextBox().sendKeys(jUtil.getSearchKeyWordAN());
 	    AssertJUnit.assertTrue(aLp.getSearchTextBox().isDisplayed());
 	    aLp.getSearchItemButton().click();
 	    amazonSearchResultsPage aSp = new amazonSearchResultsPage(driver);
 		log.info("Clicking a random search result");
-	    aSp.clickRandomItem();
+		aSp.clickRandomItem();
 		log.info("The title of the page is "+" "+driver.getTitle());
 		log.info("Purchase item from amazon is completed with no errors ");
 	

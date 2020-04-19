@@ -1,3 +1,4 @@
-23:15:44.886 [main] INFO  resources.BaseClass - Clicking a random search result
-23:15:46.621 [main] INFO  resources.BaseClass - The title of the page is  Mount-It! Soundbar Bracket Universal Sound Bar TV Mount for Mounting Above or Under TV, Fits Sonos, Samsung, Sony, Vizio, Adjustable Arm Fits 23 to 65 Inch TVs, 33 Lbs Weight Capacity Black (MI-SB41): Amazon.com.au: Electronics
-23:15:46.621 [main] INFO  resources.BaseClass - Purchase item from amazon is completed with no errors 
+01:59:03.295 [main] INFO  resources.BaseClass - Searching for the given keyword
+01:59:06.729 [main] INFO  resources.BaseClass - Clicking a random search result
+01:59:08.615 [main] INFO  resources.BaseClass - The title of the page is  Sony 32" W660E Full HD Smart TV: TVs: Amazon.com.au
+01:59:08.615 [main] INFO  resources.BaseClass - Purchase item from amazon is completed with no errors 

@@ -1,7 +1,6 @@
-23:09:28.600 [main] INFO  resources.BaseClass - Purchase item from amazon is completed with no errors 
-23:15:29.286 [main] INFO  resources.BaseClass - driver is initialized
-23:15:31.425 [main] INFO  resources.BaseClass - Navigated to ebay 
-23:15:33.009 [main] INFO  resources.BaseClass - Asserting the page title
-23:15:38.031 [main] INFO  resources.BaseClass - driver is initialized
-23:15:40.601 [main] INFO  resources.BaseClass - Navigated to Amazon 
-23:15:42.114 [main] INFO  resources.BaseClass - Searching for the given keyword
+23:29:27.195 [main] INFO  resources.BaseClass - Clicking a random search result
+23:29:28.015 [main] INFO  resources.BaseClass - The title of the page is  Amazon.com.au : Sony 55 inch TV
+23:29:28.015 [main] INFO  resources.BaseClass - Purchase item from amazon is completed with no errors 
+23:53:58.793 [main] INFO  resources.BaseClass - driver is initialized
+23:54:01.741 [main] INFO  resources.BaseClass - Navigated to Amazon 
+23:54:01.799 [main] INFO  resources.BaseClass - Searching for the given keyword
