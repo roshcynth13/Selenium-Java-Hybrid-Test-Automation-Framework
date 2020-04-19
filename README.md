@@ -2,7 +2,7 @@
 
 Solution to the Web Automation Assignment from Opus Consultancy 
 
-# Tech Stach :
+# Tech Stack
 
 - Unit Testing Framework - TestNG
 - Data Driven Approach - Rich JSON Data Source 
